@@ -4,14 +4,20 @@ The Shark Runner provides inference and training APIs to run deep learning model
 
 # How to configure.
 
-### Build [torch-mlir](https://github.com/llvm/torch-mlir) and [iree](https://github.com/google/iree).
+### Build [torch-mlir](https://github.com/llvm/torch-mlir) and [iree](https://github.com/google/iree) including [iree python bindings](https://google.github.io/iree/building-from-source/python-bindings-and-importers/#using-the-python-bindings)
 
 ### Setup Python Environment
 ```shell
-export PYTHONPATH={torch-mlir-build-dir}/tools/torch-mlir/python_packages/torch_mlir
+#Activate your virtual environment.
+export TORCH_MLIR_BUILD_DIR=/path/to/torch-mlir/build
+export IREE_BUILD_DIR=/path/to/iree-build
+source ../set_dep_pypaths.sh
 ```
-export [iree python bindings](https://google.github.io/iree/building-from-source/python-bindings-and-importers/#using-the-python-bindings)
 
+### Run a demo script
+```shell
+python resnet50.py
+```
 
 ### Shark Inference API
 
