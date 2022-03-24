@@ -1,4 +1,5 @@
-# Shark Runner
+# Shark Runner (Depreceated)
+Moved to [dShark](https://github.com/NodLabs/dSHARK/tree/master/shark_runner)
 
 The Shark Runner provides inference and training APIs to run deep learning models on Shark Runtime.
 
